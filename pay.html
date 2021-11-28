@@ -1,0 +1,59 @@
+<html> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <script src="pay.js"></script>
+    <link rel="stylesheet" href="pay.css">
+</head> 
+<body> 
+<h2 style="text-align: center">ONLINE PAYMENT</h2>           
+<form name="PayForm" action="/" onsubmit="return payValidate()" method="post">  
+    <p>Name : <input type="text" name="Name"></p>
+     <label class="alert" id="name"></label><br>  
+
+    <p> Address : <input type="text" name="Address">  </p>
+     <label class="alert" id="address"></label><br> 
+
+    <p>Phone : <input type="number" name="Phone"> </p>
+    <label class="alert" id="phone"></label><br> 
+    
+    <p>CC-Number : <input type="number" name="CCNumber"> </p>
+    <label class="alert" id="ccnumber"></label><br><br>
+    
+    <label for="due" class="date">Valid Till:</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+           <select class="month" id="due">
+               <option value="month">Month</option>
+               <option value="jan">01</option>
+               <option value="feb">02</option>
+               <option value="march">03</option>
+               <option value="apr">04</option>
+               <option value="may">05</option>
+               <option value="ju">06</option>
+               <option value="jul">07</option>
+               <option value="aug">08</option>
+               <option value="sep">09</option>
+               <option value="oct">10</option>
+               <option value="nov">11</option>
+               <option value="dec">12</option>
+            </select>
+            <select class="year" id="due">
+                <option value="years">Years</option>
+                <option value="2025">25</option>
+                <option value="2024">24</option>
+                <option value="2023">23</option>
+                <option value="2022">22</option>
+                <option value="2021">21</option>
+           </select><br> <br>
+    <p>CC-Holder : <input type="text" name="CCHName"> </p>
+    <label class="alert" id="cchname"></label><br> 
+
+    <p>CVC : <input type="number" name="CVC"> </p>
+    <label class="alert" id="cvc"></label><br>
+
+    <h3><input type="submit" value="Pay" name="Submit" id="sub"></h3><br> 
+    <label class="done" id="done"></label>  
+</form> 
+</body> 
+</html>

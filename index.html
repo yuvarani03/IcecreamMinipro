@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICE-CREAM Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--header starts-->
+    <header>
+        <a href="#" class="logo"><i class="fas fa-ice-cream"></i> YUMLICK...</a>
+    <div class="navigation">
+        <a class="active" href="#home">HOME</a>
+        <a href="#flavours">FLAVOURS</a>
+        <a href="#order">BUY</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+    <div class="icons">
+        <i class="fas fa-bars" id="menu"></i>    
+    </div>
+    </header>
+<!--header ends--> 
+
+<!--home section starts-->
+    <section class="home" id="home">
+            <div class=" wrapper">
+                    <div class="content">
+                        <span>Our Special Yumlick</span>
+                        <h3>Orange, Strawberry Ice-Cream</h3>
+                        <p> Papper cup ice cream 150ML contains Orange, Strawberry Ice Cream flavour with 2 Scoop Gelato Cup.</p>
+                        <span class="cost">Rs100</span>
+                    </div>
+                    <div class="image">
+                        <img src="img/home1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <span>Our Special Yumlick</span>
+                        <h3>Kwality walls Magnum</h3>
+                        <p>Kwality walls Magnum Truffle Ice Cream is made with Belgian Chocolate, Smooth Chocolate truffle sauce wrapped in thick cracking Belgian chocolate.</p>
+                        <span class="cost">Rs70</span>
+                    </div>
+                    <div class="image">
+                        <img src="img/home2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <span>Our Special Yumlick</span>
+                        <h3>Butterscotch</h3>
+                        <p>Creamy Butterscotch icecream inside Crispy wafer biscuit cone India's most loved ice cream cone. Taste of Real milk, real ice cream.</p>
+                        <span class="cost">Rs80</span>
+                    </div>
+                    <div class="image">
+                        <img src="img/home3.jpg" alt="">
+                    </div>
+            </div>
+    </section>
+<!--home section ends-->
+
+<!--flavours starts-->
+<section class="flavours" id="flavours">
+    <h3 class="fav">Ice Cream Flavours </h3>
+    <h1 class="fav1"> Popular Brands </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="img/fav1.jpg" alt="">
+            <h3>Family Pack Amul Real Ice Cream - Roasted Almond, 1 L Tub</h3>
+            <span class="cost">Rs250</span>
+        </div>
+        <div class="box">
+            <img src="img/fav2.jpg" alt="">
+            <h3>Katraj-Family Pack Strawberry Flavour, 500ml</h3>
+            <span class="cost">Rs120</span>
+        </div>
+        <div class="box">
+            <img src="img/fav3.jpg" alt="">
+            <h3>Amul Tricone - Cookie Crunch Delight Ice Cream, 120 ml</h3>
+            <span class="cost">Rs40</span>
+        </div>
+        <div class="box">
+            <img src="img/fav4.jpg" alt="">
+            <h3>Amul Tricone Pista Badam Ice Cream, 120ml</h3>
+            <span class="cost">Rs30</span>
+        </div>
+        <div class="box">
+            <img src="img/fav5.jpg" alt="">
+            <h3>Katraj-Chocolate Cup Icecream, 200ml </h3>
+            <span class="cost">Rs150</span>
+        </div>
+        <div class="box">
+            <img src="img/fav6.png" alt="">
+            <h3>Arun Kulfi Maharaj Speciality Ice Cream, 125ml</h3>
+            <span class="cost">Rs50</span>
+        </div>
+    </div>
+</section>  
+<!--flavours ends--> 
+
+<!--order starts-->
+<section class="order" id="order">
+    <h1 class="fav">Your Order</h1><br><br>
+<div class="choose">
+<div>
+    <input type="button" onclick="orange()" value="Orange, Strawberry Ice-Cream, 150ml" class="get">
+    <input type="button" onclick="kwality()" value="Kwality walls Magnum" class="get">
+    <input type="button" onclick="butterscotch()" value="Butterscotch" class="get">
+    <input type="button" onclick="realice()" value="Family Pack Amul Real Ice Cream - Roasted Almond, 1 L" class="get">
+    <input type="button" onclick="strawberry()" value="Katraj-Family Pack Strawberry Flavour, 500ml" class="get">
+    <input type="button" onclick="crunch()" value="Amul Tricone - Cookie Crunch Delight Ice Cream, 120 ml" class="get">
+    <input type="button" onclick="badam()" value="Amul Tricone Pista Badam Ice Cream, 120ml" class="get">
+    <input type="button" onclick="chocolate()" value="Katraj-Chocolate Cup Icecream, 200ml" class="get">
+    <input type="button" onclick="kulfi()" value="Arun Kulfi Maharaj Speciality Ice Cream, 125ml" class="get">
+</div>
+<div class="items">
+    <p id="item1"></p>
+    <p id="item2"></p>
+    <p id="item3"></p>
+    <p id="item4"></p>
+    <p id="item5"></p>
+    <p id="item6"></p>
+    <p id="item7"></p>
+    <p id="item8"></p>
+    <p id="item9"></p><br><br>
+    <p class="total" id="total"></p>
+</div>
+<div>
+    <input type="button" onclick="Buy()" value="BUY-ONLINE" id="btn">
+</div>
+<div id="payb">
+<img src="img/arrow.gif" alt="">
+<a href="pay.html">Pay Your Bill Amount Here</a>
+</div>
+</div>
+</section>
+<!--order ends-->
+
+<!--contact details starts-->
+<section class="contact" id="contact">
+    <h3 class="fav"> CONTACT DETAILS </h3>
+    <div class="box-container">
+        <div class="box">
+            <h3>Contact Information</h3>
+            <a href="">8675849387</a>
+            <a href="">8958475849</a>
+            <a href="">yumlick@gmail.com</a>
+            <a href="">scoopy@gmail.com</a>
+            <a href="">Vellore, India - 632515</a>
+        </div>
+        <div class="box">
+            <h3>Follow us on Social Media</h3>
+            <a href="#" class="fab fa-facebook-f">  Facebook</a>
+            <a href="#" class="fab fa-instagram-square">  Instagram</a>
+            <a href="#" class="fab fa-linkedin">  Linkedin</a>
+        </div>
+    </div>
+</section>  
+<!--contact details ends--> 
+
+<!--page loader starts-->
+<div class="load-container">
+    <img src="img/ani.gif" alt="">
+</div>
+<!--page loader ends-->
+
+<!--js script link--> 
+    <script src="app.js"></script>
+</body>
+</html>
